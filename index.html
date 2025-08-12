@@ -2,22 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+               style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+               font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdnjs.cloudflare.com/ajax/libs/font-awesome/;
+               img-src 'self' data:;
+               object-src 'none';
+               base-uri 'self';
+               form-action 'self'">
+
     <meta name="referrer" content="no-referrer">
     <meta name="ASTER" content="width=device-width, initial-scale=1" />
     <title>Glenn Aster - Portfolio Développeur</title>
-    <!-- FontAwesome pour icônes -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts (optionnel mais recommandé) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Feuille de style principale -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome dernière version (6.5.2) -->
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyA0Y4ZCkxzgv2Fne5+5ZTCDJ/NzNw2K6Jqq/RSB+BeIVHeYHlPOGQ5Ge86X1P6Lx98R5Vg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
 
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -107,73 +120,68 @@
 
 
 
-    <!-- Section Compétences -->
-    <section id="skills" class="skills section">
-        <div class="container max-width-1000">
-            <h2 class="section-title">Mes Compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-category card">
-                    <h3>Développement Web</h3>
-                    <div class="skill-list">
-                        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
-                        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-                        <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-                        <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-                    </div>
-                </div>
-<!-- Bases de données -->
-  <div class="skill-category card">
-    <h3>Bases de données</h3>
-    <div class="skill-list">
-      <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
-    </div>
-  </div>
-<!-- Compétences commerciales -->
-  <div class="skill-category card commercial-category">
-    <h3>Compétences commerciales</h3>
-    <div class="skill-list">
-      <div class="skill-item">
-        <i class="fas fa-file-word"></i>
-        <span>Microsoft Word</span>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-file-excel"></i>
-        <span>Microsoft Excel</span>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-file-powerpoint"></i>
-        <span>Microsoft PowerPoint</span>
-      </div>
-    </div>
-</div>
+<!-- Section Compétences -->
+<section id="skills" class="skills section">
+  <div class="container max-width-1000">
+    <h2 class="section-title">Mes Compétences</h2>
+    <div class="skills-grid">
 
-                </div>
-                <div class="skill-category card">
-                    <h3>Outils</h3>
-                    <div class="skill-list">
-                        <div class="skill-item"><i class="fab fa-idle-alt"></i><span>IDLE</span></div>
-                        <div class="skill-item"><i class="fas fa-code"></i><span>VS Code</span></div>
-                    </div>
-                    <div class="skill-category realization-card">
+      <!-- Développement Web -->
+      <div class="skill-category card">
+        <h3>Développement Web</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML5</span></div>
+          <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
+          <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+          <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
+        </div>
+      </div>
+
+      <!-- Bases de données -->
+      <div class="skill-category card">
+        <h3>Bases de données</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-database"></i> <span>SQL</span></div>
+        </div>
+      </div>
+
+      <!-- Compétences commerciales -->
+      <div class="skill-category card">
+        <h3>Compétences commerciales</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-file-word"></i> <span>Microsoft Word</span></div>
+          <div class="skill-item"><i class="fas fa-file-excel"></i> <span>Microsoft Excel</span></div>
+          <div class="skill-item"><i class="fas fa-file-powerpoint"></i> <span>Microsoft PowerPoint</span></div>
+        </div>
+      </div>
+
+      <!-- Outils -->
+      <div class="skill-category card">
+        <h3>Outils</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-terminal"></i><span>IDLE</span></div>
+          <div class="skill-item"><i class="fas fa-code"></i> <span>VS Code</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Réalisation -->
+<div class="skill-category card">
   <h3>Réalisation</h3>
-  <div class="realization-list">
-    <ul>
-      <li>
-        <i class="fas fa-globe"></i>
-        <a href="https://monsiteexemple.com" target="_blank" rel="noopener">
-          Site web sur le Gabon
-        </a>
-      </li>
-      <li>
-          Application de prise de rendez-vous en ligne en developpement
-        </a>
-      </li>
-      <!--liens vers les projets -->
-    </ul>
-  </div>
+  <ul class="realization-list">
+    <li>
+      <i class="fas fa-globe"></i>
+      <a href="https://monsiteexemple.com" target="_blank" rel="noopener">Site web sur le Gabon</a>
+    </li>
+    <li>
+      <i class="fas fa-calendar-check"></i> Application de prise de rendez-vous (en développement)
+    </li>
+  </ul>
 </div>
+  </div>
+</section>
 
-    </section>
 
 <section id="experience" class="experience section">
   <div class="container max-width-800">
