@@ -1,20 +1,26 @@
-name: Jekyll site CI
-
+name: Deploy Pages
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+push:
+branches: [ "main" ]
+permissions:
+contents: read
+pages: write
+id-token: write
+concurrency:
+group: "pages"
+cancel-in-progress: true
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+deploy:
+environment:
+name: github-pages
+url: ${{ steps.deployment.outputs.page_url }}
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- name: Upload site
+uses: actions/upload-pages-artifact@v4
+with:
+path: ./BACK/Public
+- name: Deploy to Pages
+id: deployment
+uses: actions/deploy-pages@v4
