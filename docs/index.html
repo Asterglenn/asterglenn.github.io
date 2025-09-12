@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' https://cdnjs.cloudflare.com;
+               style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+               font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+               img-src 'self' data:;
+               object-src 'none';
+               base-uri 'self';
+               form-action 'self'">
+
+    <meta name="referrer" content="no-referrer">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glenn Aster - Portfolio Développeur</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome dernière version (6.5.2) -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Glenn Aster</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Accueil</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Compétences</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Expérience</a></li>
+                <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home" class="hero section">
+        <div class="hero-container container grid-2">
+            <div class="hero-content">
+                <h1 class="hero-title">Salut, je suis <span class="highlight">Glenn Aster</span></h1>
+                <p class="hero-subtitle">Apprenti Développeur Web Full-Stack passionné</p>
+                <p class="hero-description">
+                    Spécialisé en HTML, CSS, JavaScript et bases de données. Je crée des solutions web modernes et performantes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#about" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-img">
+                       <img src="assets/Photo 1 myself Medium.png" alt="Photo de Glenn Aster" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="about section">
+  <div class="container max-width-800">
+    <h2 class="section-title">À propos de moi</h2>
+
+    <div class="about-content">
+      <p>
+        Je suis un apprenti passionné d'informatique, autodidacte en HTML, et motivé par la création web. J'ai réalisé par exemple un site internet sur mon pays d'origine, ce qui m'a permis de mettre en pratique mes premières compétences de développeur.
+      </p>
+      <p>
+        J'ai aussi développé une application simple de prise de rendez-vous en ligne, qui m'a aidé à apprendre les bases de la programmation et la gestion d'un projet.
+      </p>
+      <p>
+        À ce stade de mon apprentissage, je maîtrise les fondamentaux du développement web, ainsi que les outils essentiels pour créer des sites modernes et fonctionnels.
+      </p>
+      <p>
+        Je reste curieux et engagé dans mon auto-formation continue pour progresser et enrichir mes compétences.
+      </p>
+    </div>
+  </div>
+  <!-- Nouvelle sous-section SKILLS IA -->
+<div class="about-category skills-ia">
+  <h3>SKILLS IA</h3>
+  <div class="skills-ia-container">
+    <p>
+      Je développe des compétences avancées en intelligence artificielle, notamment l'utilisation de Google Flow pour générer des vidéos ultra réalistes à partir de prompts bien spécifiques, grâce à des frameworks réalisés par mes soins.
+    </p>
+    <p>
+      J'explore et mets en œuvre des technologies comme Eleven Labs, Veo3 et d'autres outils innovants liés à l'IA, ce qui me permet d'intégrer efficacement ces innovations dans mes projets.
+    </p>
+    <p>
+      En parallèle, j'ai consolidé mes compétences financières, acquises tant à l'école qu'à titre personnel, pour analyser et optimiser les opportunités d'investissement en lien avec les technologies IA et les marchés financiers.
+    </p>
+    <p>
+      Cette combinaison technique et financière est au cœur de mon profil, me permettant d'aborder les projets IA avec une vision stratégique et opérationnelle.
+    </p>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- Section Compétences -->
+<section id="skills" class="skills section">
+  <div class="container max-width-1000">
+    <h2 class="section-title">Mes Compétences</h2>
+    <div class="skills-grid">
+
+      <!-- Développement Web -->
+      <div class="skill-category card">
+        <h3>Développement Web</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML5</span></div>
+          <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
+          <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+          <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
+        </div>
+      </div>
+
+      <!-- Bases de données -->
+      <div class="skill-category card">
+        <h3>Bases de données</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-database"></i> <span>SQL</span></div>
+        </div>
+      </div>
+
+      <!-- Compétences commerciales -->
+      <div class="skill-category card">
+        <h3>Compétences commerciales</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-file-word"></i> <span>Microsoft Word</span></div>
+          <div class="skill-item"><i class="fas fa-file-excel"></i> <span>Microsoft Excel</span></div>
+          <div class="skill-item"><i class="fas fa-file-powerpoint"></i> <span>Microsoft PowerPoint</span></div>
+        </div>
+      </div>
+
+      <!-- Outils -->
+      <div class="skill-category card">
+        <h3>Outils</h3>
+        <div class="skill-list">
+          <div class="skill-item"><i class="fas fa-terminal"></i><span>IDLE</span></div>
+          <div class="skill-item"><i class="fas fa-code"></i> <span>VS Code</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Réalisation -->
+<div class="skill-category card">
+  <h3>Réalisation</h3>
+  <ul class="realization-list">
+    <li>
+      <i class="fas fa-globe"></i>
+      <a href="https://smileconciergerie.netlify.app" target="_blank" rel="noopener">Site web Smile By E&M Conciergerie</a>
+    </li>
+    <li>
+      <i class="fas fa-calendar-check"></i> Application de prise de rendez-vous (en développement)
+    </li>
+  </ul>
+</div>
+  </div>
+</section>
+
+
+<section id="experience" class="experience section">
+  <div class="container max-width-800">
+    <h2 class="section-title">Formation & Expérience</h2>
+    
+    <!-- Expériences scolaires -->
+    <div class="experience-category">
+      <h3>Expériences scolaires</h3>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <div class="timeline-date">2025 - 2027</div>
+          <div class="timeline-content">
+            <h4>BTS SIO (Services Informatiques aux Organisations)</h4>
+            <p>Option SLAM - Solutions Logicielles et Applications Métier</p>
+            <p>My Digital School, Caen</p>
+          </div>
+        </div>
+        <div class="timeline-item card">
+          <div class="timeline-date">2024 - 2025</div>
+          <div class="timeline-content">
+            <h4>Licence 1 Informatique</h4>
+            <p>UFR Sciences, Caen</p>
+          </div>
+        </div>
+                <div class="timeline-item card">
+          <div class="timeline-date">2023 - 2024</div>
+          <div class="timeline-content">
+            <h4>Licence 1 Commerce</h4>
+            <p>Bachelor EGC Normandie</p>
+            <p>Saint-lô, Normandie</p>
+          </div>
+        </div>
+                <div class="timeline-item card">
+          <div class="timeline-date">2021 - 2022</div>
+          <div class="timeline-content">
+            <h4>Baccalauréat Général</h4>
+            <p>Spécialité Mathématiques et Sciences de l'Ingénieur</p>
+            <p>Libreville, Gabon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expériences professionnelles -->
+    <div class="experience-category">
+      <h3>Expériences professionnelles</h3>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <div class="timeline-content">
+            <h4>Création et gestion de plusieurs projets web et digitaux, alliant
+              compétences en developpement informatique, sens commercial
+              et stratégies marketing
+            </h4>
+            <div class="experience-category"></div>
+            <p>Utilisation d'outils digitaux comme Runway Gen-3 Alpha, pour
+              créer du contenu attractif, généner du trafic et monétiser des sites
+              e-commerce et vitrines développés pour mes projets ou en collaboration
+              avec d'autres.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projets réalisés -->
+    <div class="experience-category">
+      <h3>Projets réalisés</h3>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h4>Portfolio personnel</h4>
+            <p>Création d'un portfolio responsive en React avec intégration d'animations.</p>
+          </div>
+        </div>
+        <div class="timeline-item card">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h4>Site vitrine pour un client local</h4>
+            <p>Développement frontend avec HTML/CSS/JS, mise en ligne et gestion du domaine.</p>
+          </div>
+        </div>
+        <!-- Ajoute d'autres projets ici -->
+         <section id="cesam" class="section section-cesam">
+  <div class="container">
+    <h2>CESAM — Branding 360°</h2>
+    <p class="subtitle">Charte graphique complète, logo 3D, supports commerciaux et site web</p>
+
+    <div class="deliverables">
+      <article class="card">
+        <h3>Logo 3D</h3>
+        <p>Version 3D fidèle au logo original, couleurs strictement conservées, rendus frontaux pour usages web/print.</p>
+      </article>
+      <article class="card">
+        <h3>Charte graphique</h3>
+        <p>Couleurs, typographies, règles d’usage, gabarits social media et print pour une identité cohérente.</p>
+      </article>
+      <article class="card">
+        <h3>Flyers & supports</h3>
+        <p>Visuels commerciaux prêts à l’impression, optimisés pour acquisition locale et événements.</p>
+      </article>
+      <article class="card">
+        <h3>Site web</h3>
+        <p>Vitrine claire orientée conversion, contenus IA lorsque pertinent, mise en ligne et suivi.</p>
+      </article>
+    </div>
+
+    <div class="gallery">
+      <img src="/assets/CESAM/CESAMLOGO3D-1.jpg" alt="Logo CESAM 3D — vue frontale" class="zoomable">
+      <img src="/assets/CESAM/CESAMLOGO3D-2.jpg" alt="Logo CESAM 3D — variante éclairage" class="zoomable">
+      <img src="/assets/CESAM/CESAMCHARTE.png" alt="Aperçu charte graphique CESAM" class="zoomable">
+      <img src="/assets/CESAM/flyer-recto.jpg" alt="Flyer CESAM recto" class="zoomable">
+      <img src="/assets/CESAM/flyer-verso.png" alt="Flyer CESAM verso" class="zoomable">
+      <img src="/assets/CESAM/flyer-tarif.PNG" alt="Flyer CESAM Tarif CESAM" class="zoomable">
+    </div>
+
+    <div class="result">
+      <strong>Résultat:</strong> identité homogène, supports prêts à l’emploi et orienté conversion; gain de vitesse de production grâce à l’IA sur certains contenus Mais pas en Intégralité. 
+    </div>
+
+    <div class="cta">
+  <a href="/assets/cesam/CESAM CHARTE (1).pdf" class="btn btn-primary" target="_blank" rel="noopener">
+    Ouvrir la charte (PDF)
+  </a>
+  <a href="/assets/cesam/CESAM CHARTE (1).pdf" class="btn btn-outline" download>
+    Télécharger la charte
+  </a>
+</div>
+  </div>
+</section>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Section CV -->
+    <section id="cv" class="cv section">
+        <div class="container max-width-800">
+            <h2 class="section-title">Mon CV</h2>
+            <a href="/assets/cv/Mon CV.pdf" target="_blank" download class="btn btn-primary download-cv-btn">
+                <i class="fas fa-download"></i> Télécharger mon CV
+            </a>
+            <div class="cv-content card">
+                <h3>Glenn Aster</h3>
+                <p><strong>Né le :</strong> 28 décembre 2003</p>
+                <p><strong>Localisation :</strong> Saint-ouen-sur-seine, France</p>
+                <p><strong>Email :</strong> pendyglennaster@email.com</p>
+                <p><strong>Téléphone :</strong> 06 24 69 08 55</p>
+                <h4>Formation</h4>
+                <ul>
+                    <li>BTS SIO (Services Informatiques aux Organisations) - Option SLAM (2025 - 2027)</li>
+                    <li>Licence Informatique - (2024 - 2025)</li>
+                    <li>Bachelor Commerce - (2023 - 2024)</li>
+                    <li>Baccalauréat Général - Spécialité Sciences (2021 - 2022)</li>
+                </ul>
+                <h4>Compétences</h4>
+                <ul>
+                    <li>HTML, CSS, JavaScript, Python</li>
+                    <li>SQL</li>
+                    <li>Idle, VS Code</li>
+                </ul>
+                <h4>Résumé</h4>
+                <p>Apprenti Développeur web full-stack passionné, spécialisé dans la création de solutions modernes et performantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact section">
+        <div class="container max-width-1000">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content grid-2">
+                <div class="contact-info">
+                    <div class="contact-item card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pendyglennaster@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>06 24 69 08 55</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Saint-ouen-sur-seine, France</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form card" novalidate>
+  <div class="form-group">
+    <input type="text" id="name" name="name" placeholder="Votre nom" required />
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" name="email" placeholder="Votre email" required />
+  </div>
+  <div class="form-group">
+    <input type="text" id="subject" name="subject" placeholder="Sujet" required />
+  </div>
+  <div class="form-group">
+    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+  </div>
+  <input type="text" id="company" name="company" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-5000px;" />
+  <button type="submit" class="btn btn-primary">Envoyer le message</button>
+  <p id="contact-status" role="status" aria-live="polite"></p>
+</form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ IA -->
+<section id="faq" class="faq section">
+  <div class="container max-width-800">
+    <h2 class="section-title">FAQ IA</h2>
+    <div class="faq-box card">
+      <p>Posez-moi une question, l'IA vous répond 👇</p>
+      <form id="faq-form">
+        <input type="text" id="faq-question" placeholder="Votre question..." required />
+        <button type="submit" class="btn btn-primary">Demander</button>
+      </form>
+      <div id="faq-answer" class="faq-answer card">
+        <p><em>Réponse affichée ici...</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Glenn Aster. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
