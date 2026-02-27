@@ -255,3 +255,89 @@ a{color:inherit;text-decoration:none}
   .btn{padding:10px 20px;font-size:.9rem}
   .hero-title{font-size:2rem}
 }
+
+
+/* ========================
+   CENTRES D'INTERET & QUALITES
+   ======================== */
+
+/* Centres d'intérêt - Grid Layout */
+.interests-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.interest-item {
+    background: var(--card-bg);
+    padding: 15px 20px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.interest-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card-strong);
+    border-color: var(--primary-color);
+}
+
+/* Qualités - Grid Layout */
+.qualities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.quality-item {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 15px 20px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: var(--shadow-card);
+}
+
+.quality-item i {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.quality-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card-strong);
+}
+
+/* Responsive pour centres d'intérêt et qualités */
+@media(max-width:768px){
+    .interests-list,
+    .qualities-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Amélioration des sections expérience avec icônes */
+.experience-category h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.experience-category h3 i {
+    color: var(--primary-color);
+}
